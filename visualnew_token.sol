@@ -1,13 +1,13 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'Visualnew Token' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
-// Total supply: 100000000
-// Decimals    : 18
+// Deployed to : 0x79B538606A50de3A2B3Fc680219F99E905b88Db3
+// Symbol      : VNT
+// Name        : Visualnew Token
+// Total supply: 21000000
+// Decimals    : 8
 //
 // Enjoy.
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract Visualnew Token is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        emit Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        symbol = "VNT";
+        name = "Visualnew Token";
+        decimals = 8;
+        _totalSupply = 2100000000000000;
+        balances[0x79B538606A50de3A2B3Fc680219F99E905b88Db3] = _totalSupply;
+        emit Transfer(address(0), 0x79B538606A50de3A2B3Fc680219F99E905b88Db3, _totalSupply);
     }
 
 
